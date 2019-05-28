@@ -1,0 +1,76 @@
+{
+  "name": "rb_app",
+  "version": "1.0.0",
+  "author": "Roger Bryant",
+  "license": "MIT",
+  "repository": {
+    "type": "git"
+  },
+  "engines": {
+    "node": "^10.0.0"
+  },
+  "description": "App example for FullStory",
+  "main": "index.js",
+  "scripts": {
+    "client": "node scripts/start-client.js",
+    "startbackend": " PROJECT_ID='MYAPP' node index.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "prodStart": "NODE_ENV=production node index.js",
+    "unitTest": "MOCHA_FILE=output/unitTest/results.xml nyc mocha  test --reporter mocha-junit-reporter ",
+    "lint": "./node_modules/.bin/eslint --ext js,jsx --max-warnings 404 client",
+    "lint:report": "./node_modules/.bin/eslint --ext js,jsx --max-warnings 404 src -f json -o eslint-report.json",
+    "prepublish": "npm run build",
+    "installDeps": "npm i && cd client && npm i ",
+    "installDepsProd": "npm i --production && cd client && npm i --production",
+    "test": "mocha './test/*.spec.js'"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.3.1",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "eslint": "^5.12.0",
+    "express": "^4.16.3",
+    "http-proxy-middleware": "^0.19.1",
+    "nyc": "^14.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "9.x",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "dummy-json": "^2.0.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-codeceptjs": "^0.4.0",
+    "eslint-plugin-disallow-methods": "^0.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "mocha": "^5.2.0",
+    "mocha-junit-reporter": "^1.22.0",
+    "nodemon": "^1.18.3",
+    "nyc": "^12.0.2",
+    "rewire": "^4.0.1",
+    "sinon": "^6.3.5",
+    "xunit-file": "^1.0.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  }
+}

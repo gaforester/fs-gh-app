@@ -1,0 +1,10 @@
+{
+  "extends": "strongloop",
+  "rules": {
+    "max-len": [2, 120, 8],
+    "sourceType": "module",
+    "impliedStrict": false,
+    "strict": ["error", "global"]
+  },
+  "parserOptions": { "ecmaVersion": 2015 }
+}

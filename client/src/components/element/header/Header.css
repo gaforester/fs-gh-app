@@ -1,0 +1,33 @@
+.header{
+    display:flex;
+    flex-direction:row;
+    text-align:center;
+    width:100%;
+    min-height:50px;
+    align-items: normal;
+    /*position: absolute;*/
+    margin-bottom: 5px;
+}
+
+.d-inline-block {
+    border: 0.0002vh solid #ffffff !important;
+    height: 46px;
+    width: 46px;
+    display: inline-block;
+}
+
+.name {
+    height: calc(1em + 8px);
+    width: 49px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: solid 2px;
+    padding-bottom: 3px;
+    border-color: #FF0000;
+    margin-left: 10px
+}
+
+.email {
+    height: calc(1em + 8px);
+    font-weight: lighter;
+}

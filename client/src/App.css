@@ -1,0 +1,197 @@
+#coming-soon {
+    color: lightgrey;
+}
+
+.container {
+    padding-top:56.25%;
+    height:0;
+    position:relative;
+}
+
+.container-interior {
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+}
+
+
+#Iframe {
+    overflow: scroll;
+    width: 1349px;
+    height: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #e6e6e6
+}
+
+#main {
+    margin-top: 8.7vh;
+    background-color: #aaa;
+    height: 100vh
+}
+.iframe-container{
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    padding-top: 1%
+}
+
+.icon_information_filled {
+    font-size: 25px;
+    text-align: center;
+    color: grey;
+}
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+
+.grafana {
+    padding: 10px;
+    height: 100%
+}
+
+.card {
+    margin: 10px;
+    padding-top: 30;
+}
+
+.main-screen {
+    background: white;
+    padding: 5px;
+    margin-top: 9.9vh;
+    /* align-items: top */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon_check_circle_filled {
+    font-size: 32px;
+}
+
+.grafana {
+    width: 34px;
+    height: 27px;
+    vertical-align: -3px;
+}
+.warehouse-card {
+    min-width: 300px;
+    padding: 15px 15px 30px;
+}
+
+.response-card {
+    min-width: 200px;
+    padding: 15px 15px 30px;
+    margin: 10px;
+}
+
+
+.journey-card {
+    min-width: 300px;
+    height: 200px;
+    padding: 5px 5px 10px;
+    margin: 10px;
+}
+
+
+.page-title {
+    font-weight: 400;
+    font-size: 3vh;
+    margin-top: 1vh;
+}
+
+
+.journey-metric-date{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.journeyDetailPage {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.graph {
+    min-width: 600px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 6px;
+    top: 40px;
+    right: -49%;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+.tab-info-button {
+    border: none;
+    background-color: transparent
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.react-tabs__tab-list {
+    border-bottom: 1px solid #aaa;
+    margin: auto;
+    padding: 0;
+}
+
+.react-tabs__tab--selected {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    box-shadow: inset 0 3px #f96302;
+    border-bottom: none;
+    color: black !important;
+    background-color: #e6e6e6;
+    border-radius: 0;
+}
+
+.react-tabs__tab {
+    color: #f96302;
+    display: inline-block;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-bottom: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.react-tabs__tab-panel {
+    background-color: #e6e6e6;
+}
+
+li {
+    margin-left: 2px;
+}
+
+.styles_overlay__CLSq- {
+    background:transparent;
+    z-index: -1;
+}
